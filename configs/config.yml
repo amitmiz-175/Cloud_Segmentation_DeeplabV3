@@ -1,0 +1,51 @@
+dataset:
+    base_path: ""
+    dataset_name: "CloudCT"
+    full_dataset_csv: "dataset/CloudCT_full_dataset.csv"
+    train_csv: "dataset/CloudCT_train_dataset.csv"
+    test_csv: "dataset/CloudCT_test_dataset.csv"
+image:
+    out_stride: 16
+    base_size: 301
+    crop_size: 301
+network:
+    backbone: "resnet"  #choices=['resnet', 'xception', 'drn', 'mobilenet']
+    sync_bn: false
+    freeze_bn: false
+    use_cuda: true
+    num_classes: 3
+training:
+    num_workers: 6
+    loss_type: "ce"   #choices=['ce', 'focal']
+    epochs: 30
+    start_epoch: 0
+    batch_size: 8
+    use_balanced_weights: false
+    lr: 0.01
+    lr_scheduler: "poly"     #choices=['poly', 'step', 'cos']
+    momentum: 0.9
+    weight_decay: 0.0005
+    nesterov: false
+    callbacks:
+    weights_initialization: 
+        use_pretrained_weights: false
+        restore_from: "./experiments/checkpoint_last.pth.tar"
+    model_best_checkpoint:
+        enabled: true
+        out_file: "./experiments/checkpoint_best.pth.tar"
+        monitor: "val_loss"
+    model_last_checkpoint: 
+        enabled: false
+        out_file: "./experiments/checkpoint_last.pth.tar"
+    train_on_subset: 
+        enabled: true
+        dataset_fraction: 0.1
+    output:
+        output_weights: "./experiments/checkpoint_best.pth.tar"
+    tensorboard: 
+        enabled: false
+        log_dir: "./tensorboard/"
+    no_val: false
+    val_interval: 1
+inference:
+    batch_size: 2
