@@ -1,0 +1,6 @@
+.idea/
+_pychache_/
+decoded_pkls/*
+experiments/*
+notebooks/
+reconstructions/*
