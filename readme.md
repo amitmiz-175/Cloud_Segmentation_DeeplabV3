@@ -98,4 +98,4 @@ To perform inference:
 ### Contacts
 
 * Amit Mizrahi, github: [amitmiz-175](https://github.com/amitmiz-175)
-* Amit Ben-Aroush, github: 
+* Amit Ben-Aroush, github: [amit-benaroush](https://github.com/amit-benaroush)
