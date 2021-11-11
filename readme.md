@@ -7,19 +7,23 @@ The project goal is cloud identification and semantic segmentation using a neura
 The task is to classify each pixel in an image to one out of three classes: clouds, sky, others.
 
 The raw data is unique and was purchased by the lab, using a set of fish-eye cameras located in different location in Haifa.  
-The data was pre-processed manually using the Cameranetwork GUI created by Amit Aides. For more information about the cameras see <add link to paper>.  
+The data was pre-processed manually using the Cameranetwork GUI created by Amit Aides. For more information about the cameras see [Distributed Sky Imaging Radiometry and Tomography](https://github.com/amitmiz-175/Cloud_Segmentation_DeeplabV3/tree/master/docs/Distributed_Sky_Imaging_Radiometry_and_Tomography.pdf).  
 The pre-processed data channels were concatenated to RGB images and masks were created accordingly. Each image has a ground truth mask composed from 3 different masks:
   1. Sun gaussian mask + sun block
   2. Sun shader binary mask
   3. Clouds probability mask
+
+![masks from gui](/docs/masks_from_gui.png)
 <p align="center">
-  <img src="https://github.com/giovanniguidi/deeplabV3_Pytorch/blob/master/docs/deeplab.png">
-  <i>Fig. 1: DeepLabV3+ model (source Chen et al. 2018)</i>
+  <i>Fig. 1: From the left: Sun shader mask, Sun mask, Sun block mask, Clouds probability mask</i>
 </p>
-  <masks images + gound truth>
   
 The final dataset - CloudCT - includs 315 RGB images and their masks of size 301x301. 
-*insert image example*
+
+![image + mask](/docs/image_and_mask.png)
+<p align="center">
+  <i>Fig. 2: A sample image and its ground truth</i>
+</p>
 
 The chosen model for the task is DeeplabV3+ network. <link to deeplab paper>
 
@@ -36,7 +40,11 @@ Loss: 0.019
 _**Test set results**_  
 Accuracy: 0.954  
 Loss: 0.028  
-<image of predictions>
+
+![test prediction](/docs/test_predictions.png)
+<p align="center">
+  <i>Fig. 3: Results of inference</i>
+</p>
 
   
 ### What operations can be performed?
@@ -52,7 +60,11 @@ The datagenerator is compatible with raw data created by the Cameranetwork GUI.
 For different dataset, a new datagenerator will need to be created. Make sure the output of the datagenerator is:
   1. Each image/mask is saves to a .pkl file as an ndarray.
   2. .csv files for train and test sets containing information about the dataset location, see example:
-  <image of csv file>  
+  
+![csv example](/docs/csv_example.png)
+<p align="center">
+  <i>Fig. 4: An example for how the .csv file should look like</i>
+</p>
     
 to operate the datagenerator of this project: 
     
