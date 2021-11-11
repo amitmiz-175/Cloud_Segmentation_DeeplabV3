@@ -4,3 +4,4 @@ decoded_pkls/*
 experiments/*
 notebooks/
 reconstructions/*
+dataset/

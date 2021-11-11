@@ -57,10 +57,19 @@ First create a virtual environment:
     conda create --name cloudct --python==3.7.1  
     conda activate cloudct
 
-Also, create the folloeing empty folders in the project directory:
-* _decoded_pkls_
-* _experiments_
-* _reconstructions_
+Also, create the following empty folders in the project directory according to the specified hierarchy:
+
+    - decoded_pkls
+    - experiments
+    - reconstructions
+    - dataset
+        - database
+            - images
+        - defected_images
+            - images
+            - masks
+        - images
+        - masks
 
 The raw data can be found [here]().  
 After download, put it in the _'reconstructions/'_ directory.
