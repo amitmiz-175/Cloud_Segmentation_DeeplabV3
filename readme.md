@@ -2,12 +2,12 @@
 
 ###  About the project
 This project is a final project of two students for electrical engineering in the Technion institute of technologies.  
-The project is a part of VISL (Vision and Image Sciences Laboratory) research.  
+The project is a part of _**VISL**_ (Vision and Image Sciences Laboratory) research.  
 The project goal is cloud identification and semantic segmentation using a neural network.  
 The task is to classify each pixel in an image to one out of three classes: clouds, sky, others.
 
 The raw data is unique and was purchased by the lab, using a set of fish-eye cameras located in different location in Haifa.  
-The data was pre-processed manually using the Cameranetwork GUI created by Amit Aides. For more information about the cameras see [Distributed Sky Imaging Radiometry and Tomography](https://github.com/amitmiz-175/Cloud_Segmentation_DeeplabV3/tree/master/docs/Distributed_Sky_Imaging_Radiometry_and_Tomography.pdf).  
+The data was pre-processed manually using the **Cameranetwork** GUI created by Amit Aides. For more information about the cameras see [Distributed Sky Imaging Radiometry and Tomography](https://github.com/amitmiz-175/Cloud_Segmentation_DeeplabV3/tree/master/docs/Distributed_Sky_Imaging_Radiometry_and_Tomography.pdf).  
 The pre-processed data channels were concatenated to RGB images and masks were created accordingly. Each image has a ground truth mask composed from 3 different masks:
   1. Sun gaussian mask + sun block
   2. Sun shader binary mask
@@ -46,6 +46,9 @@ Loss: 0.028
   <i>Fig. 3: Results of inference</i>
 </p>
 
+
+The checkpoints to recapture the results above can be found [here]().  
+After download, put the file in the _'experiments/'_ directory.
   
 ### What operations can be performed?
 
@@ -53,13 +56,21 @@ First create a virtual environment:
 
     conda create --name cloudct --python==3.7.1  
     conda activate cloudct
-  
+
+Also, create the folloeing empty folders in the project directory:
+* _decoded_pkls_
+* _experiments_
+* _reconstructions_
+
+The raw data can be found [here]().  
+After download, put it in the _'reconstructions/'_ directory.
+
 #### DATA GENERATION
   
-The datagenerator is compatible with raw data created by the Cameranetwork GUI.
+The datagenerator is compatible with raw data created by the **Cameranetwork** GUI.
 For different dataset, a new datagenerator will need to be created. Make sure the output of the datagenerator is:
-  1. Each image/mask is saves to a .pkl file as an ndarray.
-  2. .csv files for train and test sets containing information about the dataset location, see example:
+  1. Each image/mask is saves to a _.pkl_ file as an _ndarray_.
+  2. _.csv_ files for train and test sets containing information about the dataset location, see example:
   
 ![csv example](/docs/csv_example.png)
 <p align="center">
@@ -72,7 +83,7 @@ to operate the datagenerator of this project:
   
 #### TRAIN
     
-The train parameters are configured in the config.yml file.
+The train parameters are configured in the _config.yml_ file.
 To perform train:
   
     python -c configs/config.yml --train
@@ -83,3 +94,8 @@ To perform inference:
     
     python -c configs/config.yml --predict_on_test_set
   
+
+### Contacts
+
+* Amit Mizrahi, github: [amitmiz-175](https://github.com/amitmiz-175)
+* Amit Ben-Aroush, github: 
