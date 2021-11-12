@@ -47,7 +47,7 @@ Loss: 0.028
 </p>
 
 
-The checkpoints to recapture the results above can be found [here](https://drive.google.com/drive/folders/1Zxs-PfJ7OvNMbtkKEwGGpGYra5qYiCeB?usp=sharing).  
+The checkpoints to recapture the results above can be found [here](https://drive.google.com/drive/folders/1cDQdH_Gua2WY0KowADI2k6cJyXM7eoe7?usp=sharing).  
 After download, put the file in the _'experiments/'_ directory.
   
 ### What operations can be performed?
@@ -71,7 +71,7 @@ Also, create the following empty folders in the project directory according to t
         - images
         - masks
 
-The raw data can be found [here](https://drive.google.com/drive/folders/1ElMbQmYX46UNyBdjiUQJV4nwlVEO7iIJ?usp=sharing).  
+The raw data can be found [here](https://drive.google.com/drive/folders/12pvIf98y8mP-SZWIBdky-3n4nWf1ofl3?usp=sharing).  
 After download, put it in the _'reconstructions/'_ directory.
 
 #### DATA GENERATION
