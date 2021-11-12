@@ -25,7 +25,7 @@ The final dataset - CloudCT - includs 315 RGB images and their masks of size 301
   <i>Fig. 2: A sample image and its ground truth</i>
 </p>
 
-The chosen model for the task is DeeplabV3+ network. <link to deeplab paper>
+The chosen model for the task is [DeeplabV3+](https://github.com/amitmiz-175/Cloud_Segmentation_DeeplabV3/tree/master/docs/deeplab.pdf) network.  
 
 The project code is based on the work of Giovanni Guidi - [DeepLab V3+ Network for Semantic Segmentation](https://github.com/giovanniguidi/deeplabV3-PyTorch) and was modified to fit the project task.
 Modules of data process and data loading were added.
