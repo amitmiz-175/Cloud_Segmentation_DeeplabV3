@@ -1,8 +1,8 @@
 # Cloud Segmentation using DeeplabV3+
 
 ###  About the project
-This project is a final project of two students for electrical engineering in the Technion institute of technologies.  
-The project is a part of _**VISL**_ (Vision and Image Sciences Laboratory) research.  
+This project is a final project of two students from the [Electrical and Computer Engineering faculty in the Technion Institute of Technologies](https://ece.technion.ac.il/).  
+The project is a part of [_**VISL**_](https://visl.technion.ac.il/) (Vision and Image Sciences Laboratory) research, and was supervised by Adi Vainiger.  
 The project goal is cloud identification and semantic segmentation using a neural network.  
 The task is to classify each pixel in an image to one out of three classes: clouds, sky, others.
 
@@ -108,3 +108,4 @@ To perform inference:
 
 * Amit Mizrahi, github: [amitmiz-175](https://github.com/amitmiz-175)
 * Amit Ben-Aroush, github: [amit-benaroush](https://github.com/amit-benaroush)
+* Adi Vainiger, github: [Addalin](https://github.com/Addalin)
