@@ -71,8 +71,8 @@ Also, create the following empty folders in the project directory according to t
         - images
         - masks
 
-The raw data can be found [here](https://drive.google.com/drive/folders/12pvIf98y8mP-SZWIBdky-3n4nWf1ofl3?usp=sharing).  
-After download, put it in the _'reconstructions/'_ directory.
+You should put the data in the _'reconstructions/'_ directory.
+It should be organized in subdirectories named after the dates of the data, as it is saved from the Cameranetwork GUI.
 
 #### DATA GENERATION
   
