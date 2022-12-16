@@ -106,6 +106,9 @@ To perform inference:
 
 ### Contacts
 
-* Amit Mizrahi, github: [amitmiz-175](https://github.com/amitmiz-175)
-* Amit Ben-Aroush, github: [amit-benaroush](https://github.com/amit-benaroush)
-* Adi Vainiger, github: [Addalin](https://github.com/Addalin)
+* Amit Mizrahi, github: [amitmiz-175](https://github.com/amitmiz-175) , mail: amitm175@gmail.com
+* Amit Ben-Aroush, github: [amit-benaroush](https://github.com/amit-benaroush) , mail: amiti0108@gmail.com
+* Adi Vainiger, github: [Addalin](https://github.com/Addalin) , mail: adi.vainiger@gmail.com
+
+
+This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation program (grant agreement No 810370: CloudCT).
